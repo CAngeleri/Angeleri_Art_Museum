@@ -228,10 +228,12 @@ margin: 10px;
   .art-carousel {
     background-color: #f9f9f9;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .art-item {
     text-align: left;
+    padding: 10px;
 }
 
 .art-image img {
