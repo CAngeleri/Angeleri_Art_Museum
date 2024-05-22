@@ -12,36 +12,32 @@ import AboutMe from "./views/AboutMe.jsx";
 
 function App() {
   const [isLargeFont, setIsLargeFont] = useState(false);
-  const [isLowVolume, setIsLowVolume] = useState(false);
+
 
   const toggleLargeFont = () => {
     setIsLargeFont(!isLargeFont);
   };
 
-  const toggleLowVolume = () => {
-    setIsLowVolume(!isLowVolume);
-  };
 
   return (
     <div className="app-container">
-      <div className={isLargeFont ? "large-font" : ""}>
-        <div className={isLowVolume ? "low-volume" : ""}>
           <BrowserRouter>
             <PrimeReactProvider>
               <Header
                 onToggleLargeFont={toggleLargeFont}
-                onToggleLowVolume={toggleLowVolume}
               />
+      <div className={isLargeFont ? "large-font" : ""}>
+        
               <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/details/:id" element={<ArtDetailsPage />} />
                 <Route path="/aboutMe" element={<AboutMe />} />
               </Routes>
+        
+      </div>
               <PageFooter />
             </PrimeReactProvider>
           </BrowserRouter>
-        </div>
-      </div>
     </div>
   );
 }

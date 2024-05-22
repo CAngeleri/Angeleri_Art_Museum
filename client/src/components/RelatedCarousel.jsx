@@ -63,7 +63,7 @@ const RelatedCarousel = () => {
 
     return (
         <div className="art-carousel">
-            <Carousel value={artworks} numScroll={1} numVisible={6} responsiveOptions={responsiveOptions} itemTemplate={artTemplate} />
+            <Carousel value={artworks} numScroll={1} numVisible={4} responsiveOptions={responsiveOptions} itemTemplate={artTemplate} className='Related-Carousel-itm'/>
         </div>
     );
 };

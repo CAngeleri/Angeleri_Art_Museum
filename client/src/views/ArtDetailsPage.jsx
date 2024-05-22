@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import RelatedCarousel from '../components/RelatedCarousel';
 
 
 const ArtDetailsPage = () => {
@@ -27,6 +28,7 @@ const ArtDetailsPage = () => {
   }
 
   return (
+    <>
     <div className="art-details-container">
       <img className="art-image" src={artDetails.primaryImage} alt={artDetails.title} />
       <div className="art-info">
@@ -41,6 +43,9 @@ const ArtDetailsPage = () => {
         <a href={artDetails.artistWikidata_URL}> {artDetails.artistDisplayName}'s Wikipedia Page</a>
       </div>
     </div>
+    <hr className='art-details-hr'/>
+    <RelatedCarousel/>
+    </>
   );
 }
 

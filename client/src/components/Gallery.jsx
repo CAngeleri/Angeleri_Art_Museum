@@ -36,11 +36,12 @@ const Gallery = () => {
   }, []);
 
   const handleSearch = (query) => {
-    fetchArtworks(query, 25);
+    fetchArtworks(query, 30);
   };
 
   return (
     <div>
+      <div></div>
       <SearchBar onSearch={handleSearch} />
       <div className='art-gallery'>
         {art.map((artPiece) => (
