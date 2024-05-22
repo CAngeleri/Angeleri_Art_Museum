@@ -33,6 +33,12 @@ const ArtDetailsPage = () => {
         <h1>{artDetails.title} ca. {artDetails.objectBeginDate}</h1>
         <p>{artDetails.classification || "This work is unlike any other piece"}</p>
         <h2>{artDetails.country || "Country unknown"}</h2>
+        
+        <hr />
+          <p>{artDetails.artistDisplayName}</p>
+          <p>{artDetails.artistDisplayBio}</p>
+          <p>Learn More about the artist: </p>
+        <a href={artDetails.artistWikidata_URL}> {artDetails.artistDisplayName}'s Wikipedia Page</a>
       </div>
     </div>
   );

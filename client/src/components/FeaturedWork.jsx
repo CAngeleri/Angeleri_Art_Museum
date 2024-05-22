@@ -1,11 +1,9 @@
 import React from 'react'
+import RelatedCarousel from './RelatedCarousel'
 
 const FeaturedWork = () => {
   return (
-    <fieldset>
-        <legend>FeaturedWork.jsx</legend>
-        Art that has be Featured 🤯
-    </fieldset>
+        <RelatedCarousel/>
   )
 }
 
