@@ -34,7 +34,7 @@ const ArtDetailsPage = () => {
       <div className="art-info">
         <h1>{artDetails.title} ca. {artDetails.objectBeginDate}</h1>
         <p>{artDetails.classification || "This work is unlike any other piece"}</p>
-        <h2>{artDetails.country || "Country unknown"}</h2>
+        <h2>{artDetails.artistNationality || "Country unknown"}</h2>
         
         <hr />
           <p>{artDetails.artistDisplayName}</p>
