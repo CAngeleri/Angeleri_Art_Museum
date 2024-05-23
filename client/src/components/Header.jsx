@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = ({ onToggleLargeFont }) => {
   const [isLargeFont, setIsLargeFont] = useState(false);
@@ -17,10 +17,12 @@ const Header = ({ onToggleLargeFont }) => {
       <div className="headerControls">
         <div>
           <h4
-            className={`headerOption ${isLargeFont ? 'largeFont' : 'standardFont'}`}
+            className={`headerOption ${
+              isLargeFont ? "largeFont" : "standardFont"
+            }`}
             onClick={handleToggleFont}
           >
-            {isLargeFont ? 'Standard Font' : 'Large Font'}
+            {isLargeFont ? "Standard Font" : "Large Font"}
           </h4>
         </div>
       </div>

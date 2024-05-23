@@ -1,10 +1,8 @@
-import React from 'react'
-import RelatedCarousel from './RelatedCarousel'
+import React from "react";
+import RelatedCarousel from "./RelatedCarousel";
 
 const FeaturedWork = () => {
-  return (
-        <RelatedCarousel/>
-  )
-}
+  return <RelatedCarousel />;
+};
 
-export default FeaturedWork
+export default FeaturedWork;

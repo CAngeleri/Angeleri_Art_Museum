@@ -13,31 +13,25 @@ import AboutMe from "./views/AboutMe.jsx";
 function App() {
   const [isLargeFont, setIsLargeFont] = useState(false);
 
-
   const toggleLargeFont = () => {
     setIsLargeFont(!isLargeFont);
   };
 
-
   return (
     <div className="app-container">
-          <BrowserRouter>
-            <PrimeReactProvider>
-              <Header
-                onToggleLargeFont={toggleLargeFont}
-              />
-      <div className={isLargeFont ? "large-font" : ""}>
-        
-              <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/details/:id" element={<ArtDetailsPage />} />
-                <Route path="/aboutMe" element={<AboutMe />} />
-              </Routes>
-        
-      </div>
-              <PageFooter />
-            </PrimeReactProvider>
-          </BrowserRouter>
+      <BrowserRouter>
+        <PrimeReactProvider>
+          <Header onToggleLargeFont={toggleLargeFont} />
+          <div className={isLargeFont ? "large-font" : ""}>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/details/:id" element={<ArtDetailsPage />} />
+              <Route path="/aboutMe" element={<AboutMe />} />
+            </Routes>
+          </div>
+          <PageFooter />
+        </PrimeReactProvider>
+      </BrowserRouter>
     </div>
   );
 }

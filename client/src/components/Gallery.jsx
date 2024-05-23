@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import SearchBar from './SearchBar';
-import ArtDisplay from './ArtDisplay';
+import React, { useEffect, useState } from "react";
+import SearchBar from "./SearchBar";
+import ArtDisplay from "./ArtDisplay";
 
 const Gallery = () => {
   const [art, setArt] = useState([]);
 
-  const fetchArtworks = async (query = 'fruit', limit = 9) => {
+  const fetchArtworks = async (query = "fruit", limit = 9) => {
     try {
       const searchResponse = await fetch(
         `https://collectionapi.metmuseum.org/public/collection/v1/search?medium=Oil%20paint&q=${query}`
@@ -26,13 +26,13 @@ const Gallery = () => {
         setArt([]);
       }
     } catch (error) {
-      console.error('Error fetching artworks:', error);
+      console.error("Error fetching artworks:", error);
       setArt([]);
     }
   };
 
   useEffect(() => {
-    fetchArtworks('fruit', 9);
+    fetchArtworks("fruit", 9);
   }, []);
 
   const handleSearch = (query) => {
@@ -43,7 +43,7 @@ const Gallery = () => {
     <div>
       <div></div>
       <SearchBar onSearch={handleSearch} />
-      <div className='art-gallery'>
+      <div className="art-gallery">
         {art.map((artPiece) => (
           <ArtDisplay key={artPiece.objectID} art={artPiece} />
         ))}

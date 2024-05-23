@@ -26,12 +26,12 @@ const AboutMe = () => {
             libero distinctio voluptatibus nemo a repudiandae explicabo est
             harum magnam facilis itaque veniam doloribus?
           </p>
-      <Link
-        to="https://www.linkedin.com/in/cameron-angeleri/"
-        className="footerText"
-      >
-        <button id="headerButton">Connect on Linkedin</button>
-      </Link>
+          <Link
+            to="https://www.linkedin.com/in/cameron-angeleri/"
+            className="footerText"
+          >
+            <button id="headerButton">Connect on Linkedin</button>
+          </Link>
         </div>
         <div className="aboutMeImgContainer">
           <img src={profilePic} alt="Profile" className="aboutMeIMG" />

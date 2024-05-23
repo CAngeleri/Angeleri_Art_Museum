@@ -6,7 +6,7 @@ const PageFooter = () => {
     <>
       <hr className="Footer-hr" />
       <div className="Footer">
-
+        
         <Link to="https://metmuseum.github.io/">
           <div className="footerText">
             <h4>Get API info</h4>
@@ -19,8 +19,13 @@ const PageFooter = () => {
           </div>
         </Link>
 
-        <Link to="https://www.linkedin.com/in/cameron-angeleri/" className="footerText" >
-          <button id="headerButton">Connect with the creator on Linkedin</button>
+        <Link
+          to="https://www.linkedin.com/in/cameron-angeleri/"
+          className="footerText"
+        >
+          <button id="headerButton">
+            Connect with the creator on Linkedin
+          </button>
         </Link>
       </div>
     </>

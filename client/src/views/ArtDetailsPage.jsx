@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import RelatedCarousel from '../components/RelatedCarousel';
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import RelatedCarousel from "../components/RelatedCarousel";
 
 const ArtDetailsPage = () => {
   const { id } = useParams();
@@ -16,7 +15,7 @@ const ArtDetailsPage = () => {
         const data = await response.json();
         setArtDetails(data);
       } catch (error) {
-        console.error('Error fetching artwork details:', error);
+        console.error("Error fetching artwork details:", error);
       }
     };
 
@@ -29,24 +28,35 @@ const ArtDetailsPage = () => {
 
   return (
     <>
-    <div className="art-details-container">
-      <img className="art-image" src={artDetails.primaryImage} alt={artDetails.title} />
-      <div className="art-info">
-        <h1>{artDetails.title} ca. {artDetails.objectBeginDate}</h1>
-        <p>{artDetails.classification || "This work is unlike any other piece"}</p>
-        <h2>{artDetails.artistNationality || "Country unknown"}</h2>
-        
-        <hr />
+      <div className="art-details-container">
+        <img
+          className="art-image"
+          src={artDetails.primaryImage}
+          alt={artDetails.title}
+        />
+        <div className="art-info">
+          <h1>
+            {artDetails.title} ca. {artDetails.objectBeginDate}
+          </h1>
+          <p>
+            {artDetails.classification || "This work is unlike any other piece"}
+          </p>
+          <h2>{artDetails.artistNationality || "Country unknown"}</h2>
+
+          <hr />
           <p>{artDetails.artistDisplayName}</p>
           <p>{artDetails.artistDisplayBio}</p>
           <p>Learn More about the artist: </p>
-        <a href={artDetails.artistWikidata_URL}> {artDetails.artistDisplayName}'s Wikipedia Page</a>
+          <a href={artDetails.artistWikidata_URL}>
+            {" "}
+            {artDetails.artistDisplayName}'s Wikipedia Page
+          </a>
+        </div>
       </div>
-    </div>
-    <hr className='art-details-hr'/>
-    <RelatedCarousel/>
+      <hr className="art-details-hr" />
+      <RelatedCarousel />
     </>
   );
-}
+};
 
 export default ArtDetailsPage;
