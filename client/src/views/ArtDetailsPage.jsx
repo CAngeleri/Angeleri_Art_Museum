@@ -53,7 +53,6 @@ const ArtDetailsPage = () => {
           </a>
         </div>
       </div>
-      <hr className="art-details-hr" />
       <RelatedCarousel />
     </>
   );

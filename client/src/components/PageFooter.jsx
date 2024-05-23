@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PageFooter = () => {
   return (
     <>
-      <hr className="Footer-hr" />
+      <hr className="" />
       <div className="Footer">
         
         <Link to="https://metmuseum.github.io/">

@@ -43,6 +43,7 @@ const Gallery = () => {
     <div>
       <div></div>
       <SearchBar onSearch={handleSearch} />
+      <hr/>
       <div className="art-gallery">
         {art.map((artPiece) => (
           <ArtDisplay key={artPiece.objectID} art={artPiece} />
