@@ -11,7 +11,7 @@ const Header = ({ onToggleLargeFont }) => {
 
   return (
     <div className="Header">
-      <Link to="/">
+      <Link to="/Angeleri_Art_Museum/">
         <h3 className="headerText">Angeleri Museum of Art</h3>
       </Link>
       <div className="headerControls">
@@ -26,7 +26,7 @@ const Header = ({ onToggleLargeFont }) => {
           </h4>
         </div>
       </div>
-      <Link to="/aboutMe">
+      <Link to="/Angeleri_Art_Museum/aboutMe">
         <button id="headerButton">about me</button>
       </Link>
     </div>

@@ -24,10 +24,10 @@ function App() {
           <Header onToggleLargeFont={toggleLargeFont} />
           <div className={isLargeFont ? "large-font" : ""}>
             <Routes>
-              <Route path='/Angeleri_Art_Museum'>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/details/:id" element={<ArtDetailsPage />} />
-                <Route path="/aboutMe" element={<AboutMe />} />
+              <Route path='/Angeleri_Art_Museum/'>
+                <Route path="" element={<LandingPage />} />
+                <Route path="details/:id" element={<ArtDetailsPage />} />
+                <Route path="aboutMe" element={<AboutMe />} />
               </Route>
             </Routes>
           </div>

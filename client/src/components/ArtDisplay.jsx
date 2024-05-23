@@ -8,7 +8,7 @@ const ArtDisplay = ({ art }) => {
 
   return (
     <div className="art-display">
-      <Link to={`/details/${art.objectID}`}>
+      <Link to={`/Angeleri_Art_Museum/details/${art.objectID}`}>
         {art.primaryImageSmall ? (
           <img
             src={art.primaryImageSmall}

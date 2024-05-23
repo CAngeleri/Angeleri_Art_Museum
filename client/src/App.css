@@ -158,6 +158,7 @@
   height: 550px;
   width: inherit;
   text-wrap: wrap;
+  transition: all 0.5s ease-out;
 }
 
 .art-display:hover {
@@ -273,6 +274,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.Related-Carousel-itm .art-display img{
+  max-height: 300px;
 }
 
 .art-carousel .p-carousel-container {
