@@ -276,6 +276,10 @@
   transition: all 0.5s ease;
 }
 
+.Related-Carousel-itm .p-carousel-items-container{
+  overflow: visible !important;
+}
+
 .Related-Carousel-itm .p-carousel-item {
   margin: 0 10px;
 }
@@ -288,12 +292,13 @@
 
 .Related-Carousel-itm .art-display{
   max-height: 500px;
+  overflow: visible !important;
 }
 
-.p-carousel-item {
+/* .p-carousel-item {
   overflow: visible;
   transition: ease-out 0.03;
-}
+} */
 
 /* About Me */
 .aboutMe {
