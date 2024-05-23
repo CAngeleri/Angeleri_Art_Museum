@@ -1,20 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const Header = ({ onToggleLargeFont, onToggleLowVolume }) => {
+const Header = ({ onToggleLargeFont }) => {
+  const [isLargeFont, setIsLargeFont] = useState(false);
+
+  const handleToggleFont = () => {
+    setIsLargeFont(!isLargeFont);
+    onToggleLargeFont();
+  };
+
   return (
     <div className="Header">
       <Link to="/">
         <h3 className="headerText">Angeleri Museum of Art</h3>
       </Link>
-      <div className="headerControls"></div>
-      <div>
-        <h4 className="headerOption" onClick={onToggleLargeFont}>
-          Large Font
-        </h4>
+      <div className="headerControls">
+        <div>
+          <h4
+            className={`headerOption ${isLargeFont ? 'largeFont' : 'standardFont'}`}
+            onClick={handleToggleFont}
+          >
+            {isLargeFont ? 'Standard Font' : 'Large Font'}
+          </h4>
+        </div>
       </div>
       <Link to="/aboutMe">
-        <button id="headerButton">Connect with the Creator</button>
+        <button id="headerButton">about me</button>
       </Link>
     </div>
   );

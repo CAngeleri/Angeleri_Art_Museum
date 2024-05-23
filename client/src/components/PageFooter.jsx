@@ -19,7 +19,7 @@ const PageFooter = () => {
           </div>
         </Link>
 
-        <Link to="/aboutMe" className="footerText" >
+        <Link to="https://www.linkedin.com/in/cameron-angeleri/" className="footerText" >
           <button id="headerButton">Connect with the Creator</button>
         </Link>
       </div>
