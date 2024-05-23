@@ -11,7 +11,6 @@ const ArtDisplay = ({ art }) => {
       <Link to={`/details/${art.objectID}`}>
         {art.primaryImageSmall ? (
           <img
-            loading="lazy"
             src={art.primaryImageSmall}
             alt={art.title || "Untitled work"}
           />

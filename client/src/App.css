@@ -261,7 +261,23 @@
 }
 
 .Related-Carousel-itm {
-  width: 90%;
+  width: 95%;
+}
+
+.Related-Carousel-itm .p-carousel-item {
+  margin: 0 10px;
+}
+
+.p-carousel-item .art-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.art-carousel .p-carousel-container {
+  overflow: visible;
+  transition: ease-out 0.03;
 }
 
 /* About Me */
