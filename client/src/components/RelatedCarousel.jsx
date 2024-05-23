@@ -5,7 +5,7 @@ import ArtDisplay from "./ArtDisplay";
 const RelatedCarousel = () => {
   const [artworks, setArtworks] = useState([]);
 
-  const fetchArtworks = async (query = "fruit", limit = 12) => {
+  const fetchArtworks = async (query = "fruit", limit = 16) => {
     try {
       const searchResponse = await fetch(
         `https://collectionapi.metmuseum.org/public/collection/v1/search?medium=Oil%20paint&q=${query}`
@@ -13,15 +13,21 @@ const RelatedCarousel = () => {
       const searchData = await searchResponse.json();
 
       if (searchData.objectIDs && searchData.objectIDs.length > 0) {
+        const objectIDs = searchData.objectIDs.slice(0, limit);
         const artDetails = await Promise.all(
-          searchData.objectIDs.slice(0, limit).map(async (id) => {
+          objectIDs.map(async (id) => {
             const artResponse = await fetch(
               `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`
             );
             return await artResponse.json();
           })
         );
-        setArtworks(artDetails);
+        const allArtworks = [];
+        // Repeat artworks to ensure we have 16 items
+        for (let i = 0; i < Math.ceil(limit / artDetails.length); i++) {
+          allArtworks.push(...artDetails);
+        }
+        setArtworks(allArtworks);
       } else {
         setArtworks([]);
       }
@@ -32,7 +38,7 @@ const RelatedCarousel = () => {
   };
 
   useEffect(() => {
-    fetchArtworks("grand");
+    fetchArtworks("dancer");
   }, []);
 
   const artTemplate = (art) => {

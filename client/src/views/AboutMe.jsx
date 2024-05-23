@@ -8,24 +8,26 @@ const AboutMe = () => {
       <hr className="Footer-hr" />
       <div className="aboutMe">
         <div className="aboutMeText">
-          <h1>About me:</h1>
-          <hr />
-          <h2>Cameron Angeleri</h2>
-          <h3>Developer, Dancer, Dreamer</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-            quaerat quibusdam veniam, sed voluptate ducimus animi odit libero
-            itaque assumenda nulla quas soluta reiciendis iste officiis, fuga
-            quos odio aliquid hic debitis dolore exercitationem labore
-            perferendis. Molestiae magni maxime voluptas obcaecati id
-            perferendis rerum eius quis fugit, modi placeat qui, at voluptate
-            est dolore error laborum repellat eaque neque cumque numquam
-            possimus! Atque, ducimus deleniti impedit officiis vel, itaque,
-            perferendis nesciunt suscipit eius ad delectus reprehenderit earum
-            aut voluptas. Corrupti, maiores aliquid iste nobis, odit incidunt
-            libero distinctio voluptatibus nemo a repudiandae explicabo est
-            harum magnam facilis itaque veniam doloribus?
-          </p>
+        <h1>About me:</h1>
+<hr />
+<h2>Cameron Angeleri</h2>
+<h3>Developer, Dancer, Dreamer</h3>
+<p>
+  Hey there, I'm Cameron Angeleri. I hope you have enjoyed my museum!
+</p>
+<p>
+  As a former ballet dancer turned full-stack developer, I've always
+  been drawn to the intersection of art and technology. After living
+  in Seattle, WA and immersing myself in programming at Coding Dojo, I
+  found my true calling in crafting digital experiences that blend
+  creativity with precision.
+</p>
+
+<p>
+  If you found this project interesting or want to connect, my inbox is
+  always open!
+</p>
+
           <Link
             to="https://www.linkedin.com/in/cameron-angeleri/"
             className="footerText"
