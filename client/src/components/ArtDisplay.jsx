@@ -19,7 +19,7 @@ const ArtDisplay = ({ art }) => {
         )}
         <hr className="styled-hr" />
         <div className="art-display-text">
-          <h3>{art.title || "Unknown Title"}</h3>
+          <h3 className="art-display-text-title">{art.title || "Unknown Title"}</h3>
           <p>{art.artistDisplayName || "Unknown Artist"}</p>
           <p>{art.objectDate || "Unknown Date"}</p>
         </div>
