@@ -2,7 +2,7 @@
 
 This single-page museum was built and constructed with curiosity and care. Check out the latest deployment [here](insert-deployment-link).
 
-*(Note: If the deployment is down and you would like to connect, please reach out to me[here](https://www.linkedin.com/in/cameron-angeleri/).)*
+*(Note: If the deployment is down and you would like to connect, please reach out to me [here](https://www.linkedin.com/in/cameron-angeleri/).)*
 
 ## Overview
 
