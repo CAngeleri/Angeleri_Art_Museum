@@ -2,7 +2,7 @@
 
 This single-page museum was built and constructed with curiosity and care. Check out the latest deployment [here](insert-deployment-link).
 
-*(Note: If the deployment is down and you would like to connect, please reach out to me [here](insert-LinkedIn-link).)*
+*(Note: If the deployment is down and you would like to connect, please reach out to me[here](https://www.linkedin.com/in/cameron-angeleri/).)*
 
 ## Overview
 
@@ -26,7 +26,12 @@ Angeleri Art Museum is not just a showcase of art but also a journey of learning
 
 ## Screenshots
 
-Include screenshots showcasing various aspects of your application.
+- Landing Page ![Landing Page](landing-page-screenshot.png)
+- Footer ![Footer](footer-screenshot.png)
+- Details Page ![Details Page](details-page-screenshot.png)
+- Details Page (Large Font) ![Details Page (Large Font)](details-page-large-font-screenshot.png)
+- About Me Page ![About Me Page](about-me-page-screenshot.png)
+- About Me Page (Large Text) ![About Me Page (Large Text)](about-me-page-large-text-screenshot.png)
 
 ## Example Code
 
