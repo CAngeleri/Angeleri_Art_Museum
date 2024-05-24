@@ -256,7 +256,6 @@
   padding: 10px;
   border-radius: 8px;
   color: #0d0d0d;
-  height: 550px;
   width: inherit;
   text-wrap: wrap;
   transition: all 0.5s ease-out;
@@ -312,39 +311,6 @@
   border-radius: 8px;
 }
 
-/* Art Details View*/
-.art-details-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 10px;
-  margin-bottom: 40px;
-}
-
-.art-image {
-  max-height: 500px;
-  max-width: 500px;
-  object-fit: contain;
-  border-radius: 8px;
-  margin: 10px;
-  margin-right: 20px;
-}
-
-.art-info h1 {
-  margin-bottom: 10px;
-}
-
-.art-info p {
-  margin-bottom: 10px;
-}
-
-.art-info h2 {
-  font-style: italic;
-  color: #777;
-}
-
-
-
 /* Styled HR */
 .styled-hr {
   border: 0;
@@ -384,7 +350,7 @@
 }
 
 .Related-Carousel-itm .art-display img {
-  max-height: 150px;
+  max-height: 250px;
   width: auto;
   max-width: 100%;
   display: block;
@@ -400,7 +366,7 @@
   overflow: hidden;
   padding: 15px;
   transition: box-shadow 0.5s ease;
-  height: 300px;
+  height: 400px;
 }
 
 .Related-Carousel-itm .art-display:hover {
@@ -411,8 +377,186 @@
   padding: 1rem;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .Related-Carousel-itm .p-carousel-item {
 
-/* About Me */
+    margin: 0 8px;
+  }
+
+  .Related-Carousel-itm .art-display {
+    height: 350px;
+  }
+
+  .Related-Carousel-itm .art-display img {
+    max-height: 225px;
+  }
+}
+
+@media (max-width: 992px) {
+  .art-carousel {
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+
+  .Related-Carousel-itm .p-carousel-item {
+    margin: 0 6px;
+  }
+
+  .Related-Carousel-itm .art-display {
+    height: 300px;
+  }
+
+  .Related-Carousel-itm .art-display img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .art-carousel {
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+
+  .Related-Carousel-itm {
+    width: 100%;
+  }
+
+  .Related-Carousel-itm .p-carousel-items-container {
+    width: 100%;
+  }
+
+  .Related-Carousel-itm .p-carousel-item {
+    margin: 0 4px;
+  }
+
+  .Related-Carousel-itm .art-display {
+    height: 250px;
+  }
+
+  .Related-Carousel-itm .art-display img {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .art-carousel {
+    font-size: 0.3rem;
+    padding: 0;
+  }
+
+  .Related-Carousel-itm .art-display {
+    height: 200px;
+  }
+
+  .Related-Carousel-itm .p-carousel-item {
+    margin: 0 2px;
+  }
+
+  .Related-Carousel-itm .art-display img {
+    max-height: 100px;
+  }
+}
+
+/* Art Details View*/
+.art-details-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.art-image {
+  max-height: 500px;
+  max-width: 100%; 
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.art-info {
+  flex: 1; 
+  margin: 10px;
+}
+
+.art-info h1 {
+  margin-bottom: 10px;
+}
+
+.art-info p {
+  margin-bottom: 10px;
+}
+
+.art-info h2 {
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .Related-Carousel-itm .p-carousel-item {
+    margin: 0 8px;
+  }
+
+  .Related-Carousel-itm .art-display {
+    height: 350px;
+  }
+
+  .Related-Carousel-itm .art-display img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .art-carousel {
+    font-size: 0.6rem;
+  }
+
+  .Related-Carousel-itm .p-carousel-item {
+    margin: 0 6px;
+  }
+
+  .Related-Carousel-itm .art-display {
+    height: 300px;
+  }
+
+  .Related-Carousel-itm .art-display img {
+    max-height: 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  .art-carousel {
+    padding: 0;
+    font-size: 0.5rem;
+  }
+
+  .Related-Carousel-itm {
+    width: 100%;
+  }
+
+  .Related-Carousel-itm .p-carousel-items-container {
+    width: 100%;
+  }
+
+  .Related-Carousel-itm .p-carousel-item {
+    margin: 0 4px;
+  }
+
+  .Related-Carousel-itm .art-display {
+    height: 250px;
+  }
+
+  .Related-Carousel-itm .art-display img {
+    max-height: 100px;
+    max-width: 200px;
+  }
+}
+
+
+/* About Me PAGE*/
 .aboutMe {
   display: flex;
   flex-wrap: wrap;
@@ -431,7 +575,7 @@
   margin: 20px;
   border: 1px solid #777;
   transition: all 0.5s ease-out;
-  max-width: 750px;
+  max-width: 600px;
 }
 
 .aboutMeIMG:hover {
@@ -440,7 +584,7 @@
 }
 
 .aboutMeImgContainer {
-  text-align: center; /* Center the image container */
+  text-align: center; 
 }
 
 @media (max-width: 768px) {
@@ -450,11 +594,18 @@
     align-items: center; 
   }
 
-  .aboutMeText, .aboutMeImgContainer {
-    margin: 10px;
-    text-align: center; /* Center text for smaller screens */
+  .aboutMeText {
+    margin: 2px;
+    text-align: center; 
+    max-width: 300px;
+  }
+
+  .aboutMeIMG{
+    max-width: 300px;
   }
 }
+
+
 
 
 /* Footer */
