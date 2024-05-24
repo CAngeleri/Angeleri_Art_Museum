@@ -1,4 +1,5 @@
-# Angeleri Art Museum: MERN Capstone 🎖️ (MongoDB, Express, React, Node.js)
+# Angeleri Art Museum: MERN Capstone 🎖️ 
+(MongoDB, Express, React, Node.js)
 
 This single-page museum was built and constructed with curiosity and care. Check out the latest deployment [here](insert-deployment-link).
 
