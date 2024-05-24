@@ -28,11 +28,16 @@ Angeleri Art Museum is not just a showcase of art but also a journey of learning
 
 - Landing Page ![Landing Page](file:///C:/Users/caman/OneDrive/Pictures/Screenshots/Screenshot%202024-05-23%20171747.png)
 
-- Footer ![Footer](footer-screenshot.png)
-- Details Page ![Details Page](details-page-screenshot.png)
-- Details Page (Large Font) ![Details Page (Large Font)](details-page-large-font-screenshot.png)
-- About Me Page ![About Me Page](about-me-page-screenshot.png)
-- About Me Page (Large Text) ![About Me Page (Large Text)](about-me-page-large-text-screenshot.png)
+- Footer 
+<img src="./client/src/assets/screenshots/Screenshot_LandingFooter.png" width="350" title="Footer">
+- Details Page 
+<img src="./client/src/assets/screenshots/Screenshot_ArtDetailsPage.png" width="350" title="Footer">
+- Details Page (Large Font) 
+<img src="./client/src/assets/screenshots/Screenshot_ArtDetailsPageLRG.png" width="350" title="Footer">
+- About Me Page
+<img src="./client/src/assets/screenshots/Screenshot_AboutMe.png" width="350" title="Footer">
+- About Me Page 
+<img src="./client/src/assets/screenshots/Screenshot_ArtDetailsPageLRG.png" width="350" title="Footer">
 
 ## Example Code
 
