@@ -43,6 +43,4 @@ Angeleri Art Museum is not just a showcase of art but also a journey of learning
 - About Me Page (Large Font)
 <img src="./client/src/assets/screenshots/Screenshot_AboutMeLRG.png" width="350" title="Footer">
 
-## Example Code
 
-While `App.jsx` provides a glimpse into the project structure, consider including more code snippets to highlight key features or implementations and inspire others to delve into the codebase.
