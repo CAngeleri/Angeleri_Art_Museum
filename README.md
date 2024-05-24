@@ -12,6 +12,7 @@ Built on the Vite framework with PrimeReact Carousel and Custom CSS, Angeleri Ar
 
 - Responsive design achieved through a combination of Flexwrap, grid, and @media breakpoints.
 - Global styling structure includes text manipulators, hover effects, and general styling to enhance user engagement and visual appeal.
+- Link to API Documentation [here](https://github.com/metmuseum/openaccess)
 
 ## Installation
 
@@ -28,7 +29,8 @@ Angeleri Art Museum is not just a showcase of art but also a journey of learning
 
 - Landing Page 
 <img src="./client/src/assets/screenshots/Screenshot_Landing.png" width="350" title="Footer">
-
+-Search Gallery 
+<img src="./client/src/assets/screenshots/Screenshot_SearchGallery.png" width="350" title="Footer">
 - Footer 
 <img src="./client/src/assets/screenshots/Screenshot_LandingFooter.png" width="350" title="Footer">
 - Details Page 
