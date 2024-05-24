@@ -37,7 +37,7 @@ Angeleri Art Museum is not just a showcase of art but also a journey of learning
 - About Me Page
 <img src="./client/src/assets/screenshots/Screenshot_AboutMe.png" width="350" title="Footer">
 - About Me Page (Large Font)
-<img src="./client/src/assets/screenshots/Screenshot_ArtDetailsPageLRG.png" width="350" title="Footer">
+<img src="./client/src/assets/screenshots/Screenshot_AboutMeLRG.png" width="350" title="Footer">
 
 ## Example Code
 
