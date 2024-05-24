@@ -26,7 +26,8 @@ Angeleri Art Museum is not just a showcase of art but also a journey of learning
 
 ## Screenshots
 
-- Landing Page ![Landing Page](file:///C:/Users/caman/OneDrive/Pictures/Screenshots/Screenshot%202024-05-23%20171747.png)
+- Landing Page 
+<img src="./client/src/assets/screenshots/Screenshot_Landing.png" width="350" title="Footer">
 
 - Footer 
 <img src="./client/src/assets/screenshots/Screenshot_LandingFooter.png" width="350" title="Footer">
