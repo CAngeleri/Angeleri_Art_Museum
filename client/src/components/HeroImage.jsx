@@ -9,8 +9,8 @@ const HeroImage = () => {
         className="hero-image"
       />
       <div className="hero-text">
-        <h1>art for all</h1>
         <p>a new way to experience</p>
+        <h1>art for all</h1>
       </div>
     </div>
   );
